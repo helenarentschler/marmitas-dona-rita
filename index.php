@@ -65,8 +65,8 @@
 <body>
     <header>
         <section class="media">
-            <a href="">Contate-nos!</a>
-            <a href="">Localização</a>
+            <a href="#contato">Encomende sua marmita!</a>
+            <a href="#local">Localização</a>
         </section>
         <section class="header">
             <a href="#">
@@ -101,6 +101,12 @@
         </section>
     </main>
     <footer>
+        <section>
+            <p id="contato">Encomende pelo nosso WhatsApp: (41) 90000-0001 </p>
+            <p>Atendimento de segunda à sexta das 9h00 às 17h00</p>
+            <p id="local">Endereço: Rua das Rosas, Bairro Maria Catarina (Palmas - TO)</p>
+        </section>
+        <hr>
         <address>Helena Rentschler 2022, todos os direitos reservados</address>
     </footer>
 </body>
