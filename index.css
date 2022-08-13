@@ -1,0 +1,145 @@
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;;
+    margin: 0;
+    background-color: rgb(43 37 31);
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    padding: .5rem 2rem;
+    background-color:rgb(188 202 5);
+    color: rgb(43 37 31);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    color: rgb(43 37 31);
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+main section {
+    margin-bottom: 2.5rem;
+}
+
+main section h2 {
+    font-size: 1.8rem;
+}
+
+main section h2, main section h3{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#lista-marmitas {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+#lista-marmitas li {
+    min-width: 300px;
+    max-width: 400px;
+}
+
+#lista-marmitas h3 {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+}
+
+#lista-marmitas li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#lista-marmitas li img{
+    width: 400px;
+}
+
+
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: .5rem 2rem;
+    background-color:rgb(255, 255, 255);
+}
+
+.media a {
+    text-decoration: none;
+    color: rgb(43 37 31);
+}
+
+.media a:hover{
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(103, 94, 85);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: .5rem 2rem;
+    background-color:rgb(188 202 5);
+}
+
+#marmitinha {
+    width: 160px;
+}
+
+#banner {
+    background-image: url(images/frango.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 8rem 2rem;
+    position: relative;
+}
+
+#promo {
+    text-align: center;
+    background-color: rgb(245 127 8);
+    margin-bottom: 0;
+    padding: 0.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#container-marmitas h2{
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1023px) {
+    html {
+        font-size: 14px;
+    }
+
+    #marmitinha {
+        width: 150px;
+    }
+
+    #lista-marmitas li img{
+        width: 300px;
+    }
+}
