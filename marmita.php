@@ -44,9 +44,7 @@
         )
     );
 
-    function consultarURL($index) {
-        return $marmitas[$index]["url"];
-    }
+    $i = $_GET["index"];
 ?>
 
 <!DOCTYPE html>
@@ -69,37 +67,27 @@
             <a href="">Localização</a>
         </section>
         <section class="header">
-            <a href="#">
+            <a href="<?php echo $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/marmitas-dona-rita';?>">
                 <img id="marmitinha" src="marmitinha.png" alt="Personagem de marmitinha com rosto sorridente" srcset="">
             </a>
-            <h1>Marmitas da Dona Rita</h1>
+                <h1>Marmitas da Dona Rita</h1>
         </section>
     </header>
     <main>
-        <section id="banner">
-            <h2>As mais deliciosa marmita de Palmas!</h2>
-            <h3>Preparadas com muita higiene, cuidado e carinho</h3>
-            <section id="promo">
-                <p>Promoção da semana: Leve 3 pague 2!</p>
-            </section>
-        </section>
-        <section id="container-marmitas">
-            <h2>Marmitas</h2>
-            <ul id="lista-marmitas">
-                <?php for($i = 0; $i < count($marmitas); $i++) { ?>
-                    <li>
-                        <a href="marmita.php?index=<?php echo $i;?>">
-                            <h3><?php echo $marmitas[$i]["nome"]; ?></h3>
-                            <img src=<?php echo $marmitas[$i]["imagem-url"]; ?> alt="" srcset="">
-                            <div>
-                                <p>Preço: R$<?php echo number_format($marmitas[$i]["preco"],2,",",".");?></p>
-                            </div>
-                        </a>
-                    </li>
-                <?php } ?> 
-            </ul>
-        </section>
-    </main>
+    <section id="container-marmitas" class="individual">
+        <h2><?php echo $marmitas[$i]["nome"];?></h2>
+        <img src=<?php echo $marmitas[$i]["imagem-url"]; ?> alt="" srcset="">
+        <ul>
+            <li>Preço: R$<?php echo number_format($marmitas[$i]["preco"],2,",",".");?></li>
+            <li>Tamanho: <?php echo $marmitas[$i]["tamanho"];?></li>
+            <li>Ingredientes: 
+                <?php foreach($marmitas[$i]["ingredientes"] as $ingrediente) {
+                    echo $ingrediente.", ";
+                } ?>
+            </li>
+        </ul>
+    </section>
+</main>
     <footer>
         <address>Helena Rentschler 2022, todos os direitos reservados</address>
     </footer>

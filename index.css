@@ -29,6 +29,11 @@ h1 {
     margin: 0;
 }
 
+li {
+    list-style: none;
+    padding: 0;
+}
+
 main section {
     margin-bottom: 2.5rem;
 }
@@ -127,7 +132,13 @@ main section h2, main section h3{
 #container-marmitas h2{
     font-family: 'Satisfy', cursive;
     font-size: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+#container-marmitas.individual {
+    text-align: center;
+    margin-bottom: 6rem;
 }
 
 @media screen and (max-width: 1023px) {
